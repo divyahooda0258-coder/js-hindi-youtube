@@ -29,3 +29,32 @@ const MyFunction = function(){
 }
 
 console.log(typeof idanother)
+
+
+
+
+//**********************************************
+
+// Stack(Primitive), Heap(Non Primitive)
+
+let MyYoutubeName = "YoutubeName";
+
+let anotherName = MyYoutubeName
+anotherName = "newname"
+
+console.log(anotherName)
+console.log(MyYoutubeName)
+
+let UserOne = {
+    email: "something",
+    id: "also something"
+}
+
+console.log(UserOne)
+
+let UserTwo = UserOne
+
+UserTwo.email = "something else"
+
+console.log(UserOne);
+console.log(UserTwo);
